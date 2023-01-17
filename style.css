@@ -1,0 +1,29 @@
+.head{
+    background-color: #e62429;
+    position: sticky;
+}
+.link-col{
+    cursor: pointer;
+}
+.link-col:hover{
+    background-color:#c70808;
+}
+
+.up-sec{
+    background-color: #303030;
+}
+a{
+    color: inherit;
+}
+
+.card-img-top{
+    height: 30vh;
+    object-fit: cover;
+}
+.col-sm{
+    margin-bottom: 1em;
+}
+.mov-sec{
+    background-color: #1F1F1F;
+}
+

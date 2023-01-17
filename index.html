@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Studios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header class="head fixed-top">
+        <div class="row">
+            <div class="logo col-md-6 col-8">
+                <img src="data:image/png;base64,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" alt="">
+
+            </div>
+            <div class="navb col-md-6 my-auto col-4" >
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-white link-col" href="#movies-section">Movies <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white link-col" href="#shows-section">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white link-col" href="#">Characters</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white link-col" href="#">Actors</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="up-sec p-5">
+      <div class="container">
+          <h1 class="ml-4 text-white">Upcoming Movies.</h1>
+          <div class="row p-4">
+              <div class="col-md-4 col-sm">
+                  <a href="https://www.imdb.com/title/tt10954600/" style="text-decoration: none;">
+                  <div class="card h-100" >
+                  <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_02.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ant Man and The Wasp: <br> Quantumania</h5>
+                    <p class="card-text">FEB 17, 2023</p>
+                  </div>
+                  </div>
+                  </a>
+              </div>
+              
+              <div class="col-md-4 col-sm">
+                  <a href="https://www.imdb.com/title/tt6791350/" style="text-decoration: none;">
+                  <div class="card h-100">
+                  <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxyvolume3_lob_crd_02.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Guardians of the Galaxy <br> Volume 3 </h5>
+                    <p class="card-text">MAY 5, 2023</p>
+                  </div>
+                  </div>
+                  </a>
+              </div>
+              <div class="col-md-4 col-sm">
+                  <a href="https://www.imdb.com/title/tt10676048/" style="text-decoration: none;">
+                  <div class="card h-100"  >
+                  <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/themarvels_lob_crd_01.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">The Marvels</h5>
+                    <p class="card-text">JUL 28, 2023 <br><p>  </p></p>
+                  </div>
+                  </div>
+                  </a>
+              </div>
+          </div> 
+            
+              
+          </div>
+
+      </div>
+  </section>
+  <section></section>
+
+  <section class="p-5 mov-sec" id="movies-section" style="scroll-margin-top: 7em;">
+    <div class="container">
+      <h1 class="ml-4 text-white">Movies</h1>
+      <div class="row p-4">
+          <div class="col-md-4 col-sm">
+              <a href="https://www.imdb.com/title/tt9114286/" style="text-decoration: none;">
+              <div class="card h-100" >
+              <img class="card-img-top img-fluid img-thumbnail" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackpantherwakandaforever_lob_crd_05.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Black Panther:Wakanda Forever</h5>
+                <p class="card-text">NOV 11, 2022</p>
+              </div>
+              </div>
+              </a>
+          </div>
+          
+          <div class="col-md-4 col-sm">
+              <a href="https://www.imdb.com/title/tt10648342/" style="text-decoration: none;">
+              <div class="card h-100">
+              <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorloveandthunder_lob_crd_04.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Thor: Love and Thunder </h5>
+                <p class="card-text">JULY 8, 2022</p>
+              </div>
+              </div>
+              </a>
+          </div>
+          <div class="col-md-4 col-sm">
+              <a href="" style="text-decoration: none;">
+              <a href="https://www.imdb.com/title/tt9419884/" style="text-decoration: none;">
+              <div class="card h-100"  >
+              <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Doctor Strange in the Multiverse of
+                   Madness</h5>
+                <p class="card-text">MAY 6, 2022 </p>
+              </div>
+              </div>
+              </a>
+          </div>
+      </div> 
+      
+      <div class="row p-4">
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt10872600/" style="text-decoration: none;">
+            <div class="card h-100" >
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man:No Way Home</h5>
+              <p class="card-text">2021</p>
+            </div>
+            </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt9032400/" style="text-decoration: none;">
+            <div class="card h-100">
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/eternals_lob_crd_06.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Eternals</h5>
+              <p class="card-text">2021</p>
+            </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt9376612/" style="text-decoration: none;">
+            <div class="card h-100"  >
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/shangchi_lob_crd_07.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Shang-Chi and The Legend of The Ten Rings</h5>
+              <p class="card-text">2021</p>
+            </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row p-4">
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt3480822/" style="text-decoration: none;">
+          <div class="card h-100" >
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidow_lob_crd_06.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Black Widow</h5>
+            <p class="card-text">2021</p>
+          </div>
+          </div>
+          </a>
+      </div>
+      
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt6320628/" style="text-decoration: none;">
+          <div class="card h-100">
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-manfarfromhome_lob_crd_04_3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man: Far From Home</h5>
+            <p class="card-text">2019</p>
+          </div>
+          </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt4154796/" style="text-decoration: none;">
+          <div class="card h-100"  >
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_crd_05_2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Avengers: Endgame</h5>
+            <p class="card-text">2019</p>
+          </div>
+          </div>
+          </a>
+      </div>
+  </div>
+          
+      </div>
+
+  </div>
+
+
+  </section>
+  <section></section>
+
+  <section class="p-5 up-sec" id="shows-section" style="scroll-margin-top: 7em;">
+    <div class="container">
+      <h1 class="ml-4 text-white">TV Shows</h1>
+      <div class="row p-4">
+          <div class="col-md-4 col-sm">
+              <a href="https://www.imdb.com/title/tt10857160/" style="text-decoration: none;">
+              <div class="card h-100" >
+              <img class="card-img-top img-fluid img-thumbnail" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/shehulk_lob_crd_04.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">She-Hulk Attorney-at-Law</h5>
+                <p class="card-text">2022</p>
+              </div>
+              </div>
+              </a>
+          </div>
+          
+          <div class="col-md-4 col-sm">
+              <a href="https://www.imdb.com/title/tt13623148/" style="text-decoration: none;">
+              <div class="card h-100">
+              <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/iamgroot_lob_crd_04.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">I Am Groot </h5>
+                <p class="card-text">2022</p>
+              </div>
+              </div>
+              </a>
+          </div>
+          <div class="col-md-4 col-sm">
+              <a href="" style="text-decoration: none;">
+              <a href="https://www.imdb.com/title/tt10857164/" style="text-decoration: none;">
+              <div class="card h-100"  >
+              <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/msmarvel_lob_crd_04.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ms. Marvel</h5>
+                <p class="card-text">2022 </p>
+              </div>
+              </div>
+              </a>
+          </div>
+      </div> 
+      
+      <div class="row p-4">
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt10234724/" style="text-decoration: none;">
+            <div class="card h-100" >
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/moonknight_lob_crd_05.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Moon Knight</h5>
+              <p class="card-text">2022</p>
+            </div>
+            </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt10160804/" style="text-decoration: none;">
+            <div class="card h-100">
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/hawkeye_lob_crd_04.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Hawkeye</h5>
+              <p class="card-text">2021</p>
+            </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm">
+            <a href="https://www.imdb.com/title/tt10168312/" style="text-decoration: none;">
+            <div class="card h-100"  >
+            <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/whatif_lob_crd_01.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">What If...? | Season 1</h5>
+              <p class="card-text">2021</p>
+            </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row p-4">
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt9140554/" style="text-decoration: none;">
+          <div class="card h-100" >
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/loki_lob_crd_04.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Loki | Season 1</h5>
+            <p class="card-text">2021</p>
+          </div>
+          </div>
+          </a>
+      </div>
+      
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt9208876/" style="text-decoration: none;">
+          <div class="card h-100">
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/falcws_lob_crd_03.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The Falcon and The Winter Soldier</h5>
+            <p class="card-text">2021</p>
+          </div>
+          </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm">
+          <a href="https://www.imdb.com/title/tt9140560/" style="text-decoration: none;">
+          <div class="card h-100"  >
+          <img class="card-img-top img-fluid" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/wandavision_lob_crd_06.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">WandaVision</h5>
+            <p class="card-text">2021</p>
+          </div>
+          </div>
+          </a>
+      </div>
+  </div>
+          
+      </div>
+
+  </div>
+
+
+  </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
